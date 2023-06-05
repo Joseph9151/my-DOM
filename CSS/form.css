@@ -1,0 +1,21 @@
+body{
+    background-color: green;
+    border: 10px dotted black;
+    
+
+}
+
+.form{
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 25px solid brown;
+    
+
+}
+
+.form:hover{
+    background-color: yellow;
+    transition: 5s;
+}
+

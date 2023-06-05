@@ -1,0 +1,14 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: aqua;
+}
+.alert{
+    padding: 15px;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+    background-color: grey;
+    width: 50vh;
+    text-align: center;
+}

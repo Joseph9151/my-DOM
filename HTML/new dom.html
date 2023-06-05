@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW DOM</title>
+    <link rel="stylesheet" href="../CSS/new dom.css">
+</head>
+<body>
+
+    <div id="elem">
+        <p>First OuterHtml</p>
+    </div>
+
+
+    <ul class="new">
+        <li class="new" >
+            <!-- <b>Information</b> -->
+        </li>
+    </ul>
+    <div class="new">End</div>
+    <!-- <script>
+        for(let i = 0; i < document.body.childNodes.length; i++) {
+            alert(document.body.childNodes[i]);
+        }
+    </script> -->
+
+    <script>
+        let elem = document.getElementById('elem')
+        elem.style.background = 'red';
+        elem.style.color = 'white'
+
+
+        // let joe = document.getElementById('joe')
+        // joe.style.background = 'green';
+        // joe.style.color = 'blue'
+        
+
+        let elem1 = document.querySelector('div');
+        elem1.style.border = '5px solid black';
+
+         let new11 = document.querySelector('.new')
+         new11.style.background = 'yellow';
+
+        let new1 = document.querySelectorAll('.new');
+        new1[2].style.fontSize = '80px';
+        new1[2].style.color = 'green';
+
+          let new2 = document.querySelector('.new');
+          new2.innerHTML = 'change HTML content';
+
+        let new3 = document.querySelector('.new');
+        new3.innerHTML = "<li><b>Changing HTML content </b></li>"
+        
+        let outer = document.querySelector('#elem');
+        outer.outerHTML = '<h1><b>Link to outer html</b></h1>';
+        let bold = document.querySelector('b');
+        bold.textContent = 'Bolder than bold';
+
+
+        // ways in manipulating html attributea
+        // A. hasAttributes; takes one argument
+        // B.setAttribute; use to set a value to an attribute in a tag, it takes two argument
+        // C.getAttributes;takes one argument
+        // 1.name attribute
+        // 2. value attribute
+        // D.removeAttribute; use to remove attribute from the tag
+
+        // alert(new3.getAttribute('class'));
+        
+        new3.setAttribute('id','idid');
+        new3.removeAttribute('class');
+
+
+
+
+
+        
+    </script>
+
+    <script src="../JS/new dom.js"></script>
+    
+</body>
+</html>

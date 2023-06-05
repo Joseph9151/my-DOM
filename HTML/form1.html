@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM1</title>
+    <link rel="stylesheet" href="../CSS/form1.css">
+
+    <style>
+        .invalid{
+            border-color: red;
+            background-color: blue;
+        }
+
+        #error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form action="" name="my">
+        <input type="text" name="one" value="1" id="">
+        <input type="text" name="two" value="2" id="">
+    </form>
+
+    <form action="" name="you">
+        <input type="text" name="one" value="1" id="">
+        <input type="text" name="two" value="2" id="">
+    </form>
+
+    <form action="" id="form" name="forms">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <input type="text" name="one" value="1" id=""> <br>
+        <input type="text" name="two" value="2" id="">
+        </fieldset>
+        
+        <fieldset id="fd">
+            <legend id="lg">Address</legend>
+            <input type="text" name="one" value="1" id=""> <br>
+            <input type="text" name="two" value="2" id="">
+        </fieldset>
+       
+    </form> -->
+
+    <form action="" name="frm">
+        <label for="">Email</label>
+        <input type="email" name="" id="input" placeholder="@email.com">
+        <div id="error"></div>
+    </form>
+
+
+    <script>
+        document.querySelector('#input').onblur = function(){
+            if(!input.value.includes('@')) {
+                this.classList.add('invalid');
+                error.innerHTML = 'Please enter a correct email'
+            }
+        }
+
+        document.querySelector('#input').onfocus = function(){
+            if(this.classList.contains('invalid')) {
+                this.classList.remove('invalid');
+                error.innerHTML = '';
+            }
+        }
+        // let elem = document.forms.you.one
+        // alert(elem.value)
+        // alert(forms.elements.one[0].value)
+    </script>
+    
+
+    <script src="../JS/form1.js"></script>
+</body>
+</html>

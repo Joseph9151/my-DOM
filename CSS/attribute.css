@@ -1,0 +1,60 @@
+body{
+    background-color: cadetblue;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sub1{
+   
+    background-color: green;
+    width: 20vw;
+
+}
+
+.sub2{
+    background-color: white;
+    width: 60vw;
+
+}
+
+.sub3{
+    background-color: green;
+    width: 20vw;
+
+}
+
+ul{
+    display: flex;
+}
+
+li{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase ;
+    background-color: green;
+    margin-left: 100px;
+    list-style-type: none;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 3px black;
+    height: 50px;
+    width: 70px;
+    color: white;
+
+   
+}
+
+.txthead{
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+    background-color: black;
+}
